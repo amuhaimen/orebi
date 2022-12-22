@@ -138,8 +138,6 @@ const Footer = () => {
             </p>
           </Flex>
         </div>
-        <h1>Change-1</h1>
-        <p>Change2</p>
       </Container>
     </div>
   );
