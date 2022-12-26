@@ -16,7 +16,7 @@ const Newarraivals = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     autoplay: false,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
