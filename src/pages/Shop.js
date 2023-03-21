@@ -2,18 +2,21 @@ import React, { useState } from "react";
 import { Breadcrumb } from "../components/layout/Breadcrumb";
 import Container from "../components/layout/Container";
 import Flex from "../components/layout/Flex";
+import LeftSidebar from "../components/layout/LeftSidebar";
 import Pagination from "../components/layout/Pagination";
 
 const Shop = () => {
   let [showNumber, setShowNumber] = useState(12);
   let handlePaginationChange = (e) => {
-    setShowNumber(e.target.value);
+    setShowNumber(+e.target.value);
   };
   return (
     <Container>
       <Breadcrumb title="Products" />
       <Flex className="flex gap-x-10">
-        <div className=" w-[25%] bg-orange-500">hello</div>
+        <div className=" w-[25%] bg-orange-500">
+          <LeftSidebar />
+        </div>
         <div className="relative w-[75%]">
           <div className="mb-10 flex justify-end gap-x-10">
             <div className="items-center gap-x-9 md:flex">
